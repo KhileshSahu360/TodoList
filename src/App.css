@@ -263,7 +263,7 @@ body{
     height: auto;
   }
   .hero ul{
-    min-height: 200px !important;
+    min-height: 400px !important;
     width: 90vw;
   }
   .input_field{
@@ -286,7 +286,7 @@ body{
     width: 100vw;
   }
   .hero ul{
-    height:0px !important;
+    min-height:370px !important;
   }
   .main{
     width: 100vw;
