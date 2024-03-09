@@ -90,9 +90,6 @@ body{
   font-family: "Poppins";
   background-color: transparent;
 }
-.input_field input:focus{
-
-}
 .add_task{
   height: 5rem;
   cursor: pointer;

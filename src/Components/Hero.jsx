@@ -106,18 +106,23 @@ const Hero = ({menuValue}) => {
         </div>
         }
         {menuValue ? <ul className="li_container">  
-          {task.map((elm,index)=>{
+          {task.length > 0 ? task.map((elm,index)=>{
             return(
               <Task key={index} successTask={successTask} success={elm.success} taskName={elm.name} history={false} id={elm.id} deleteTask={deleteTask}/>
             )
-          })}
+          }):
+            <h3>No Task Found!</h3>
+          }
+          
         </ul>:
         <ul className="li_container">
-          {history.map((elm,index)=>{
+          {history.length>0 ?history.map((elm,index)=>{
             return(
               <Task key={index} taskName={elm.name} history={true} success={elm.success} id={elm.id} deleteTask={deleteTask} successTask={successTask}/>
             )
-          })}
+          }):
+            <h3>No Activity!</h3>
+          }
         </ul>
         }
       </div>
